@@ -1,0 +1,20 @@
+// Criando os estilos globais que serao usados em todas ou quase todas as janelas
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+
+export const EstilosGlobais = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#447c5b',
+    alignItems: 'center',
+    paddingHorizontal: 5,
+    width: '100%',
+  },
+  img: {
+    width: width * 0.6,
+    height: width * 0.45,
+    alignSelf: 'center',
+    marginTop: 10,
+  },
+});
